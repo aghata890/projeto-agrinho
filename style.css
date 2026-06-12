@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f9f4;
+    color:#333;
+    transition:0.4s;
+}
+
+header{
+    background:
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+
+    background-size:cover;
+    background-position:center;
+
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+#modo{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    border:none;
+    padding:12px 20px;
+
+    border-radius:6px;
+    cursor:pointer;
+    background:white;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+header p{
+    max-width:700px;
+    margin-top:15px;
+}
+
+.btn{
+    margin-top:25px;
+    padding:15px 30px;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.titulo{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+    opacity:0;
+    transform:translateY(50px);
+    transition:.8s;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2e7d32;
+}
+
+.sobre{
+    background:#e8f5e9;
+    text-align:center;
+}
+
+.texto-sobre{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+#topo{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+    background:#2e7d32;
+    color:white;
+
+    cursor:pointer;
+    display:none;
+}
+
+/* MODO ESCURO */
+
+body.dark{
+    background:#121212;
+    color:white;
+}
+
+body.dark .card{
+    background:#222;
+    color:white;
+}
+
+body.dark .sobre{
+    background:#1b1b1b;
+}
+
+body.dark footer{
+    background:#0a3a0a;
+}
+
+body.dark .titulo{
+    color:#81c784;
+}
